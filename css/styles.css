@@ -1,0 +1,14 @@
+@import "./normalize.css";
+
+:root {
+  --color-primary: #23a6f0;
+  --color-secondary: #252b42;
+  --color-star: #f3cd03;
+  --color-grey: #737373;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
