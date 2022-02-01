@@ -5,10 +5,155 @@
   --color-secondary: #252b42;
   --color-star: #f3cd03;
   --color-grey: #737373;
+  --color-border: #dedede;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: var(--color-secondary);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.15rem;
+}
+
+h3 {
+  font-size: 1.842rem;
+}
+
+h4 {
+  font-size: 1.228rem;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  margin-top: 0;
+  font-size: 1rem;
+}
+/* Icon */
+
+.icon {
+  width: 4.5rem;
+  height: 5.5rem;
+}
+
+/* Headings */
+.heading {
+  text-align: center;
+  width: 75%;
+}
+@media (min-width: 768px) {
+  .heading {
+    text-align: center;
+    width: 30%;
+  }
+}
+
+/* Testimonials Section */
+
+.testimonial_block {
+  border: 2px solid var(--color-border);
+  width: 22rem;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.avatar {
+  width: 11.4rem;
+  height: 11.4rem;
+  margin: 1rem;
+}
+
+.testimonial_block .list {
+  width: 75%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 0;
+}
+
+.rating {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.testimonial_block .purpose {
+  width: 85%;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-row-gap: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--2x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .item1 {
+    grid-column: 1 / 6;
+  }
+}
+
+/* Features */
+
+.feature_section {
+  text-align: center;
+}
+.feature {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+}
+
+.feature h4 {
+  margin: 0;
+}
+
+.feature_block {
+  padding: 2rem;
+  margin: 3rem;
+  text-align: center;
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    flex-direction: row;
+  }
 }
