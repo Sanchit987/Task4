@@ -64,9 +64,6 @@ p {
   border-radius: 3;
   border: none;
   height: 3rem;
-  padding: 1rem;
-  text-align: center;
-  justify-content: center;
   color: white;
 }
 
@@ -90,6 +87,7 @@ p {
 .heading {
   text-align: center;
   width: 75%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   .heading {
@@ -99,7 +97,11 @@ p {
 }
 
 /* Testimonials Section */
-
+.industry {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
 .testimonial_block {
   border: 2px solid var(--color-border);
   width: 22rem;
@@ -108,7 +110,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;
+  margin: auto;
 }
 
 .avatar {
@@ -147,7 +149,8 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .item1 {
-    grid-column: 1 / 6;
+    grid-column: 1 / 4;
+    margin: auto;
   }
   /* .grid--2x6 {
   } */
@@ -269,4 +272,34 @@ p {
     align-items: center;
     justify-content: space-between;
   }
+}
+
+/* Card */
+
+.card {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 25rem;
+  height: 51rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+}
+
+.card .btn {
+  width: 60%;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.card-list {
+  list-style: none;
+}
+
+.list-icon {
+  width: 22px;
+  height: 22px;
+  padding: 2px;
 }
