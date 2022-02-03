@@ -70,6 +70,13 @@ p {
 .btn--primary {
   background-color: var(--color-primary);
 }
+
+.btn--bookapp {
+  margin-top: 2rem;
+  width: 23.8rem;
+  height: 3.8rem;
+  display: block;
+}
 /* Icon */
 
 .icon {
@@ -99,7 +106,6 @@ p {
 /* Testimonials Section */
 .industry {
   text-align: center;
-  width: 60%;
   margin: auto;
 }
 .testimonial_block {
@@ -302,4 +308,67 @@ p {
   width: 22px;
   height: 22px;
   padding: 2px;
+}
+
+/* Book an Appointment */
+
+.label {
+  font-weight: 900;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-book {
+  width: 23.8rem;
+  height: 3.8rem;
+  display: block;
+}
+
+.input-book::placeholder {
+  padding-left: 8px;
+}
+
+.grid--2x1 {
+  row-gap: 0rem;
+  grid-template-rows: 20rem 53rem;
+  grid-template-columns: 31.7rem;
+  justify-items: center;
+}
+
+/* Branches */
+.branch {
+  background-color: var(--color-secondary);
+  height: 70vh;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information > img {
+  width: 70vw;
+  max-width: 31rem;
+  max-height: 20rem;
+}
+
+.info {
+  color: white;
+  width: 70vw;
+}
+
+@media screen and (min-width: 768px) {
+  .information {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+  }
+
+  .info {
+    color: white;
+    width: 40vw;
+    padding: 10px;
+  }
 }
