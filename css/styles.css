@@ -77,6 +77,11 @@ p {
   height: 3.8rem;
   display: block;
 }
+
+.app1 > img {
+  width: 100%;
+  height: 100%;
+}
 /* Icon */
 
 .icon {
@@ -85,9 +90,9 @@ p {
 }
 
 .icon--company {
-  width: 11.4rem;
-  height: 3.8rem;
-  margin: 1.5rem;
+  width: 15rem;
+  height: 5rem;
+  margin: 20px;
 }
 
 /* Headings */
@@ -149,9 +154,8 @@ p {
   grid-row-gap: 3rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 845px) {
   .grid--2x3 {
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
   .item1 {
@@ -194,9 +198,14 @@ p {
 
 /* Subscribe */
 
+.container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
 .grid--1x7 {
-  justify-items: center;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subs {
@@ -212,12 +221,10 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 900px;
 }
 
 .subs h3 {
   text-align: center;
-  width: 250px;
   color: #fff;
 }
 
@@ -231,28 +238,46 @@ p {
   border: none;
   height: 3rem;
 }
+.respo-com {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.f1,
+.f2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
 
-@media screen and (min-width: 768px) {
-  .grid--1x7 {
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-  }
-  .item7 {
-    grid-column: 1 / 7;
-    grid-row: 2;
-  }
+@media screen and (min-width: 815px) {
   .subs {
+    width: 70%;
     flex-direction: row;
     justify-content: space-between;
     height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .subs h3 {
+  .subs > h3 {
     text-align: left;
     width: 250px;
     margin-left: 2%;
   }
   .input-group {
     margin-right: 2%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .respo-com {
+    flex-direction: row;
+  }
+  .f1,
+  .f2 {
+    flex-direction: row;
   }
 }
 
@@ -305,13 +330,17 @@ p {
 }
 
 .list-icon {
-  width: 22px;
-  height: 22px;
-  padding: 2px;
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Book an Appointment */
 
+.book_appointment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .label {
   font-weight: 900;
   display: block;
@@ -337,9 +366,14 @@ p {
 }
 
 /* Branches */
+.branches {
+  width: 100%;
+}
+
 .branch {
   background-color: var(--color-secondary);
   height: 70vh;
+  width: 100%;
 }
 
 .information {
@@ -349,7 +383,7 @@ p {
 }
 
 .information > img {
-  width: 70vw;
+  width: 70%;
   max-width: 31rem;
   max-height: 20rem;
 }
