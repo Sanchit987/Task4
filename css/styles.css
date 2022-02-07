@@ -304,11 +304,26 @@ p {
     justify-content: space-between;
   }
 }
+/* Pricing */
+
+.pricing {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.price-head {
+  text-align: center;
+}
+.price-headline {
+  width: 35rem;
+  margin: auto;
+  text-align: center;
+}
 
 /* Card */
 
 .card {
-  margin: auto;
+  margin: 15px 0px 15px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -319,19 +334,66 @@ p {
   border-radius: 5px;
 }
 
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card--popular {
+  background-color: var(--color-secondary);
+  color: white;
+  height: 54rem;
+}
+
+.lst-bullet {
+  vertical-align: middle;
+  padding: 2px;
+  margin-right: 10px;
+}
 .card .btn {
   width: 60%;
   border-radius: 3px;
   text-align: center;
+  line-height: 38px;
 }
 
-.card-list {
-  list-style: none;
+.card-list__item {
+  display: block;
+  margin: 3px;
+}
+.con {
+  width: 120px;
+  height: 120px;
+}
+.price-grid--2x2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 50px 50px;
+  align-items: center;
 }
 
-.list-icon {
-  width: 2rem;
-  height: 2rem;
+.itemp1 {
+  grid-row: 1 / span 2;
+  font-size: 4.2rem;
+  margin-bottom: 10px;
+}
+.itemp2 {
+  font-size: 1rem;
+}
+.itemp3 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card-flex {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+  .card--popular {
+    margin-top: -20px;
+  }
 }
 
 /* Book an Appointment */
