@@ -78,10 +78,6 @@ p {
   display: block;
 }
 
-.app1 > img {
-  width: 100%;
-  height: 100%;
-}
 /* Icon */
 
 .icon {
@@ -410,6 +406,10 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.book-heading {
+  width: 23.8rem;
+}
+
 .input-book {
   width: 23.8rem;
   height: 3.8rem;
@@ -421,10 +421,48 @@ p {
 }
 
 .grid--2x1 {
+  margin: 5rem auto;
+  background-color: white;
   row-gap: 0rem;
   grid-template-rows: 20rem 53rem;
   grid-template-columns: 31.7rem;
   justify-items: center;
+}
+
+.form-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app1 > .i1 {
+  width: 100%;
+  height: 100%;
+}
+.app1 > .i2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--2x1 {
+    row-gap: 0rem;
+    grid-template-rows: 46.8rem;
+    grid-template-columns: 20rem 46.8rem;
+    justify-items: center;
+  }
+  .app1 > .i1 {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  .app1 > .i2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* Branches */
